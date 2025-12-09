@@ -132,8 +132,14 @@ Zorg dat elke controllers ten minste de volgende endpoints hebben:
 - PUT
 - DELETE
 
+Het is hierbij belangrijk dat je een `Stock` altijd aan een `Album` koppelt. Gebruik in je `StockController` daarom de volgende annotatie:
+```java
+@RequestMapping("/albums/{albumId}/stock")
+```
+
 Weet je niet meer hoe je de service, controller en repository maakt, kijk dan nog eens bij de vorige opdracht.
 
+### Tips
 Het is natuurlijk lastig om de controller en service te maken, zonder daar meteen de DTO en de mappers bij te maken. Het is daarom handig om alvast een basis DTO en mapper voor elke entiteit te maken. Let er daarbij op dat we in stap 5 pas de relaties aan die DTO's gaan toevoegen en dat natuurlijk ook in de mapper verwerkt moet worden.
 
 Probeer met één functionaliteit te beginnen, bijvoorbeeld de "get-all". Van daaruit kun je verder bouwen met de volgende functionaliteit. 
@@ -342,14 +348,13 @@ We gaan dit "makkelijk" oplossen door aan de bestaande "get all albums" methode 
 ```
 
 Als die parameter niet `null` is, dan roepen we de `albumService.getAlbumsWithStock` aan.
-Als dit parameter wel `null` is, dan roepen we gewoon `albumService.findAlbumById` aan.
+Als dit parameter wel `null` is, dan roepen we gewoon `albumService.findAllAlbums` aan.
 
 De `albumService.getAlbumsWithStock` returned een "List<AlbumResponseDTO>" en ontvangt een "Boolean stock" als input. Zorg dat de functie alle albums MET stock returned als de stock-boolean TRUE is en alle albums ZONDER stock returned als de stock-boolean FALSE is.
 
 
 ## Stap 8 (Delete)
 
-[//]: # (TODO: delete probleem uitleggen en laten oplossen)
 Misschien heb je inmiddels al je API getest in PostMan en heb je al gemerkt dat je in je console een error krijgt zoals deze: 
 
 ```terminaloutput
