@@ -7,6 +7,8 @@ Daarnaast ga je ook alle entiteiten met elkaar koppelen door middel van relaties
 
 Heb je de opdracht van vorige week niet gemaakt of niet af gekregen, dan kun je de [voorbeeld uitwerkingen](https://github.com/hogeschoolnovi/backend-springboot-vinylshop-modellen-uitwerkingen) clonen.
 
+>Waarschuwing: Dit is een grote opdracht. 
+
 
 # Opdrachtbeschrijving
 
