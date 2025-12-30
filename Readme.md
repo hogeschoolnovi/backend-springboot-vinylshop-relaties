@@ -141,14 +141,14 @@ Het is hierbij belangrijk dat je een `Stock` altijd aan een `Album` koppelt. Geb
 
 Weet je niet meer hoe je de service, controller en repository maakt, kijk dan nog eens bij de vorige opdracht.
 
->Tip: vergeet je ExceptionHandling niet
-
 ### Tips
-Het is natuurlijk lastig om de controller en service te maken, zonder daar meteen de DTO en de mappers bij te maken. Het is daarom handig om alvast een basis DTO en mapper voor elke entiteit te maken. Let er daarbij op dat we in stap 5 pas de relaties aan die DTO's gaan toevoegen en dat natuurlijk ook in de mapper verwerkt moet worden.
+- Het is natuurlijk lastig om de controller en service te maken, zonder daar meteen de DTO en de mappers bij te maken. Het is daarom handig om alvast een basis DTO en mapper voor elke entiteit te maken. Let er daarbij op dat we in stap 5 pas de relaties aan die DTO's gaan toevoegen en dat natuurlijk ook in de mapper verwerkt moet worden.
 
-Probeer met één functionaliteit te beginnen, bijvoorbeeld de "get-all". Van daaruit kun je verder bouwen met de volgende functionaliteit. 
+- Probeer met één functionaliteit te beginnen, bijvoorbeeld de "get-all". Van daaruit kun je verder bouwen met de volgende functionaliteit. 
 
-Het lijkt veel werk, dat is het ook, maar als je het systematisch aanpakt, kun je het stap voor stap oplossen.
+- Vergeet je ExceptionHandling niet
+
+- Het lijkt veel werk, dat is het ook, maar als je het systematisch aanpakt, kun je het stap voor stap oplossen.
 
 ## Stap 3 (Relaties)
 Je hebt al de basis opzet van de klassen gemaakt, maar deze opdracht gaat over relaties.
