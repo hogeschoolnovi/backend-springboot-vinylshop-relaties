@@ -255,6 +255,7 @@ Omdat `AlbumExtendedResponseDto` overerft van `AlbumResponseDto`, is het mogelij
 ```java
 AlbumExtendedResponseDTO result = (AlbumExtendedResponseDTO) super.mapToDto(model);
 ```
+> Let er op dat je nu eigenlijk 2 Bean van het type `AlbumDtoMapper` hebt. Spring heeft daar soms moeite mee, zet daarom de `@Primary` annotatie boven de originele `AlbumDtoMapper`-klasse.
 
 Alternatief kun je in de `AlbumDTOMapper` gebruik maken van een generic method die je voor de "mapToDto" gebruikt in zowel de `AlbumDtoMapper` als de `AlbumExtendedDtoMapper`: 
 ```java
